@@ -18,6 +18,8 @@ This is a rewrite of [Gladiator Pits MUD](https://github.com/servusdei2018/gladi
 
 You may download a prebuilt, stripped and optimized binary for Windows, Mac and Linux on our [Releases](https://github.com/servusDei2018/GladiatorPits-Go/releases/latest) page, or (if you have Go installed) you may run the following command to build Gladiator Pits Go for yourself: `go build`.
 
+Run the executable. After that, you may connect to localhost, port 3000 with any mud client.
+
 ## License
 
 Copyright (C) 2020 The GladiatorPits-Go Authors. All rights reserved.
