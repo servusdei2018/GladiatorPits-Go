@@ -48,7 +48,7 @@ var (
 
 // Process commands
 func (p *Player) Process(s string) error {
-	tk := strings.Split(strings.ReplaceAll(strings.ReplaceAll(s, "\r", ""), "\n", ""), " ")
+	tk := strings.Split(strings.ReplaceAll(strings.Replace(s, "\r", "", -1), "\n", ""), " ")
 	handler, ok := CommandMap[strings.ToLower(tk[0])]
 	if !ok || p.Status == FIGHTING {
 		return p.Send(fmt.Sprintf("Unrecognised command '%s'. Type 'commands' to list available options.", tk[0]))
